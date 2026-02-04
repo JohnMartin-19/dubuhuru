@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { MapPin, Mail, Phone, Linkedin, Twitter, Facebook } from "lucide-react";
-import logo from "figma:asset/948968b97f994bfc696c262ebc07cb7e415ad7f0.png";
+
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <img src={logo} alt="Dubu Huru" className="h-16 w-auto mb-4" />
+            <img src='/dubu.jpeg' alt="Dubu Huru" className="h-16 w-auto mb-4" />
             <p className="text-muted-foreground mb-4">
               Building digital solutions that enable environmental sustainability, climate resilience, and responsible resource management across Africa.
             </p>

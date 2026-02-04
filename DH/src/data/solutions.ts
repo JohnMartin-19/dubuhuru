@@ -1,4 +1,4 @@
-import { Solution } from '../types';
+import type { Solution } from '../types';
 
 export const solutions: Solution[] = [
   {

@@ -1,14 +1,13 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowRight, CloudSun, FileBarChart, Leaf, Droplet, HandHeart, Sparkles } from "lucide-react";
-import { useEffect, useState } from "react";
+import { ArrowRight, CloudSun, FileBarChart, Leaf, Droplet, HandHeart, Sparkles, Shield, Zap, Globe } from "lucide-react";
 
 export function Home() {
   return (
     <div>
       <HeroSection />
       <LinkaAfricaFeature />
-      <MetricsSection />
+      <TrustIndicators />
       <SolutionsSection />
       <CTASection />
     </div>
@@ -30,11 +29,11 @@ function HeroSection() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Building Africa's
-              <span className="text-primary"> Climate-Resilient </span>
-              Future
+              <span className="text-primary"> Sustainable Tech </span>
+               for the Future
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Digital solutions that enable environmental sustainability, climate resilience, and responsible resource management across the continent. From Gilgil to the world.
+              Digital solutions that impact society, enable environmental sustainability, climate resilience, and responsible resource management across the continent. From Gilgil to the world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -45,10 +44,10 @@ function HeroSection() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
-                to="/solutions"
+                to="/about"
                 className="inline-flex items-center justify-center px-8 py-4 bg-card border-2 border-primary text-primary rounded-lg hover:bg-primary/5 transition-all"
               >
-                Explore Solutions
+                Learn More
               </Link>
             </div>
           </motion.div>
@@ -67,14 +66,17 @@ function HeroSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
-            {/* Floating stats */}
+            {/* Floating badge */}
             <div className="absolute -bottom-6 -left-6 bg-card rounded-xl shadow-lg p-6 border border-border">
-              <div className="text-3xl font-bold text-primary">10K+</div>
-              <div className="text-sm text-muted-foreground">Farmers Impacted</div>
-            </div>
-            <div className="absolute -top-6 -right-6 bg-card rounded-xl shadow-lg p-6 border border-border">
-              <div className="text-3xl font-bold text-primary">15K</div>
-              <div className="text-sm text-muted-foreground">Tonnes CO₂ Reduced</div>
+              <div className="flex items-center space-x-3">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <HandHeart className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <div className="text-xl font-bold text-primary">Making Impact</div>
+                  <div className="text-sm text-muted-foreground">One solution at a time</div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -95,7 +97,6 @@ function LinkaAfricaFeature() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-4">
-              <Sparkles className="w-4 h-4 text-primary mr-2" />
               <span className="text-primary font-medium">Flagship Solution</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -141,17 +142,17 @@ function LinkaAfricaFeature() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/solutions/linka-africa"
+                to="/login"
                 className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105"
               >
                 <HandHeart className="mr-2 w-5 h-5" />
-                Explore Linka Africa
+                Start a Campaign
               </Link>
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-card border-2 border-primary text-primary rounded-lg hover:bg-primary/5 transition-all"
               >
-                Get Started
+                Get in Touch
               </Link>
             </div>
           </motion.div>
@@ -165,15 +166,15 @@ function LinkaAfricaFeature() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop"
+                src="https://media.istockphoto.com/id/1200802368/photo/african-little-girls-standing-in-trash-and-looking-at-kibera-slum-kenya-east-africa.webp?a=1&b=1&s=612x612&w=0&k=20&c=0w--aCphkVcgEpJMuAv2vb5aBnss-B1u4_Cg1v7qQ-M="
                 alt="African community receiving support"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">95%+ Reaches Beneficiaries</h3>
+                <h3 className="text-2xl font-bold mb-2">Direct Impact, Maximum Transparency</h3>
                 <p className="text-white/90">
-                  Compared to 60-70% in traditional donation channels
+                  Built for the African context, trusted by communities
                 </p>
               </div>
             </div>
@@ -182,12 +183,12 @@ function LinkaAfricaFeature() {
               <div className="flex items-center space-x-2">
                 <HandHeart className="w-5 h-5 text-primary" />
                 <div>
-                  <div className="text-sm font-semibold">Direct Impact</div>
-                  <div className="text-xs text-muted-foreground">No intermediaries</div>
+                  <div className="text-sm font-semibold">AI Verified</div>
+                  <div className="text-xs text-muted-foreground">Trusted causes</div>
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-card rounded-xl shadow-lg px-6 py-4 border border-border">
+            {/* <div className="absolute -bottom-4 -left-4 bg-card rounded-xl shadow-lg px-6 py-4 border border-border">
               <div className="flex items-center space-x-2">
                 <Sparkles className="w-5 h-5 text-primary" />
                 <div>
@@ -195,7 +196,7 @@ function LinkaAfricaFeature() {
                   <div className="text-xs text-muted-foreground">Trusted causes</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
@@ -203,107 +204,61 @@ function LinkaAfricaFeature() {
   );
 }
 
-function MetricsSection() {
-  const metrics = [
+function TrustIndicators() {
+  const features = [
     {
-      label: "Farmers Reached",
-      value: 10000,
-      suffix: "+",
-      prefix: "",
+      icon: Shield,
+      title: "Secure & Verified",
+      description: "Every campaign goes through AI-powered verification to ensure legitimacy and trust",
     },
     {
-      label: "CO₂ Emissions Reduced",
-      value: 15000,
-      suffix: " tonnes",
-      prefix: "",
+      icon: Zap,
+      title: "Fast & Efficient",
+      description: "Real-time payment processing with M-PESA, cards, and international transfers",
     },
     {
-      label: "Weather Stations Deployed",
-      value: 50,
-      suffix: "+",
-      prefix: "",
-    },
-    {
-      label: "Cost Savings Generated",
-      value: 250,
-      suffix: "M",
-      prefix: "KES ",
+      icon: Globe,
+      title: "Built for Africa",
+      description: "Solutions designed specifically for African communities and contexts",
     },
   ];
 
   return (
-    <section className="py-16 bg-card border-y border-border">
+    <section className="py-20 bg-card border-y border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {metrics.map((metric, index) => (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Linka?</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We're building trust through technology, one verified campaign at a time
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
             <motion.div
-              key={metric.label}
+              key={feature.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-center"
+              className="text-center p-6 rounded-xl bg-gradient-to-br from-primary/5 to-transparent border border-border hover:border-primary transition-all"
             >
-              <CountUp
-                end={metric.value}
-                duration={2}
-                prefix={metric.prefix}
-                suffix={metric.suffix}
-              />
-              <div className="text-sm text-muted-foreground mt-2">{metric.label}</div>
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <feature.icon className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-muted-foreground">{feature.description}</p>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  );
-}
-
-function CountUp({
-  end,
-  duration,
-  prefix = "",
-  suffix = "",
-}: {
-  end: number;
-  duration: number;
-  prefix?: string;
-  suffix?: string;
-}) {
-  const [count, setCount] = useState(0);
-  const [hasStarted, setHasStarted] = useState(false);
-
-  useEffect(() => {
-    if (!hasStarted) return;
-
-    const increment = end / (duration * 60);
-    let current = 0;
-
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, 1000 / 60);
-
-    return () => clearInterval(timer);
-  }, [end, duration, hasStarted]);
-
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      onViewportEnter={() => setHasStarted(true)}
-      className="text-3xl md:text-4xl font-bold text-primary"
-    >
-      {prefix}
-      {count.toLocaleString()}
-      {suffix}
-    </motion.div>
   );
 }
 
@@ -314,28 +269,32 @@ function SolutionsSection() {
       title: "Climate Data Platforms",
       description:
         "Real-time climate monitoring and predictive analytics for informed decision-making across sectors.",
-      link: "/solutions/climate-data-platforms",
+      link: "/contact",
+      status: "Coming Soon",
     },
     {
       icon: FileBarChart,
       title: "Sustainability Reporting Tools",
       description:
         "Streamlined ESG reporting and compliance for African businesses meeting global standards.",
-      link: "/solutions/sustainability-reporting",
+      link: "/contact",
+      status: "Coming Soon",
     },
     {
       icon: Leaf,
       title: "Green Finance Tech",
       description:
         "Digital infrastructure connecting climate projects with sustainable investment capital.",
-      link: "/solutions/green-finance",
+      link: "/contact",
+      status: "Coming Soon",
     },
     {
       icon: Droplet,
       title: "Smart Resource Management",
       description:
         "IoT-enabled systems for efficient water, energy, and waste management in African contexts.",
-      link: "/solutions/resource-management",
+      link: "/contact",
+      status: "Coming Soon",
     },
   ];
 
@@ -349,9 +308,9 @@ function SolutionsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Solutions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Vision for the Future</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive digital tools designed for African sustainability challenges
+            Building comprehensive digital tools for African sustainability challenges
           </p>
         </motion.div>
 
@@ -366,8 +325,15 @@ function SolutionsSection() {
             >
               <Link
                 to={solution.link}
-                className="block h-full bg-card border border-border rounded-xl p-6 hover:border-primary transition-all hover:shadow-lg group"
+                className="block h-full bg-card border border-border rounded-xl p-6 hover:border-primary transition-all hover:shadow-lg group relative overflow-hidden"
               >
+                {solution.status && (
+                  <div className="absolute top-4 right-4">
+                    <span className="text-xs px-3 py-1 bg-amber-100 text-amber-700 rounded-full font-medium">
+                      {solution.status}
+                    </span>
+                  </div>
+                )}
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all">
                   <solution.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
                 </div>
@@ -399,24 +365,24 @@ function CTASection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Build a Sustainable Future?
+            Ready to Make an Impact?
           </h2>
           <p className="text-lg mb-8 opacity-90">
-            Partner with us to implement climate-smart solutions that deliver measurable impact.
+            Join us in building sustainable solutions that create real change across Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/contact"
+              to="/login"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary rounded-lg hover:bg-white/90 transition-all hover:scale-105"
             >
-              Get Started
+              Start a Campaign
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <Link
-              to="/projects"
+              to="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all"
             >
-              View Our Work
+              Contact Us
             </Link>
           </div>
         </motion.div>

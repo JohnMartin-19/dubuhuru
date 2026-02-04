@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import logo from "figma:asset/948968b97f994bfc696c262ebc07cb7e415ad7f0.png";
+
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +56,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Dubu Huru" className="h-12 w-auto" />
+            <img src='/dubu.jpeg' alt="Dubu Huru" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
