@@ -14,7 +14,7 @@ export const projects: Project[] = [
       { label: 'Weather Stations', value: '50' },
       { label: 'Crop Loss Reduction', value: '35%' }
     ],
-    completionDate: '2024-11'
+    completionDate: '2025-11'
   },
   {
     id: '2',
@@ -23,13 +23,13 @@ export const projects: Project[] = [
     sector: 'Manufacturing',
     country: 'Kenya',
     impactArea: 'ESG',
-    image: 'https://images.unsplash.com/photo-1581091870621-32e1f3f07c4d?w=800&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1694434948850-ed51bd461733?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE5haXJvYmklMjBjYXJib24lMjBjcmVkaXRzfGVufDB8fDB8fHww',
     stats: [
       { label: 'Companies Enrolled', value: '25' },
       { label: 'CO₂ Reduced', value: '15,000 tonnes' },
       { label: 'Cost Savings', value: 'KES 45M' }
     ],
-    completionDate: '2024-09'
+    completionDate: '2025-09'
   },
   {
     id: '3',
@@ -38,13 +38,13 @@ export const projects: Project[] = [
     sector: 'Water Management',
     country: 'Kenya, Uganda, Tanzania',
     impactArea: 'Water Resources',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1690715667558-aa97c374fef6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGFrZSUyMFZpY3RvcmlhfGVufDB8fDB8fHww',
     stats: [
       { label: 'Countries', value: '3' },
       { label: 'Monitoring Points', value: '120' },
       { label: 'Communities Impacted', value: '500,000+' }
     ],
-    completionDate: '2024-08'
+    completionDate: '2025-08'
   },
   {
     id: '4',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
       { label: 'Carbon Credits', value: '50,000 tonnes' },
       { label: 'Revenue Generated', value: 'KES 120M' }
     ],
-    completionDate: '2024-06'
+    completionDate: '2025-06'
   },
   {
     id: '5',
@@ -68,13 +68,13 @@ export const projects: Project[] = [
     sector: 'Energy',
     country: 'Kenya',
     impactArea: 'Energy Efficiency',
-    image: 'https://images.unsplash.com/photo-1509390683974-ae18eb6e73e6?w=800&h=500&fit=crop',
+    image: 'https://plus.unsplash.com/premium_photo-1661900538689-e2c25124aa35?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TW9tYmFzYSUyMHBvcnR8ZW58MHx8MHx8fDA%3D',
     stats: [
       { label: 'Energy Saved', value: '40%' },
       { label: 'Solar Capacity', value: '2.5 MW' },
       { label: 'Annual Savings', value: 'KES 85M' }
     ],
-    completionDate: '2024-04'
+    completionDate: '2025-04'
   },
   {
     id: '6',
@@ -83,13 +83,13 @@ export const projects: Project[] = [
     sector: 'Humanitarian',
     country: 'Kenya',
     impactArea: 'Climate Resilience',
-    image: 'https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?w=800&h=500&fit=crop',
+    image: 'https://media.istockphoto.com/id/153912577/photo/viiew-of-turkana-village-kenya.webp?a=1&b=1&s=612x612&w=0&k=20&c=308DNbc8IBbW7798zCIuds9bZJB2O5XbJc1TjEBmvV0=',
     stats: [
       { label: 'Population Covered', value: '1M+' },
       { label: 'Early Warnings Issued', value: '24' },
       { label: 'Response Time', value: '72 hours' }
     ],
-    completionDate: '2024-03'
+    completionDate: '2025-03'
   },
   {
     id: '7',
@@ -104,7 +104,7 @@ export const projects: Project[] = [
       { label: 'Collection Efficiency', value: '+45%' },
       { label: 'Recycling Rate', value: '28%' }
     ],
-    completionDate: '2024-01'
+    completionDate: '2025-01'
   },
   {
     id: '8',
@@ -119,6 +119,6 @@ export const projects: Project[] = [
       { label: 'Farmers Trained', value: '3,500' },
       { label: 'Premium Increase', value: '18%' }
     ],
-    completionDate: '2023-12'
+    completionDate: '2025-12'
   }
 ];

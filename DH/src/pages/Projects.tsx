@@ -3,16 +3,37 @@ import { useState } from "react";
 import { projects } from "../data/projects";
 import { MapPin, Calendar } from "lucide-react";
 
+// 1. Define the local interface to fix the "Project vs Solution" mismatch
+interface ProjectStat {
+  label: string;
+  value: string;
+}
+
+interface Project {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  sector: string;
+  impactArea: string;
+  country: string;
+  completionDate: string;
+  stats: ProjectStat[];
+}
+
 export function Projects() {
   const [selectedSector, setSelectedSector] = useState<string>("All");
   const [selectedCountry, setSelectedCountry] = useState<string>("All");
   const [selectedImpact, setSelectedImpact] = useState<string>("All");
 
-  const sectors = ["All", ...Array.from(new Set(projects.map((p) => p.sector)))];
-  const countries = ["All", ...Array.from(new Set(projects.flatMap((p) => p.country.split(", "))))];
-  const impactAreas = ["All", ...Array.from(new Set(projects.map((p) => p.impactArea)))];
+  // Type the projects array to use our local interface
+  const allProjects = projects as Project[];
 
-  const filteredProjects = projects.filter((project) => {
+  const sectors = ["All", ...Array.from(new Set(allProjects.map((p) => p.sector)))];
+  const countries = ["All", ...Array.from(new Set(allProjects.flatMap((p) => p.country.split(", "))))];
+  const impactAreas = ["All", ...Array.from(new Set(allProjects.map((p) => p.impactArea)))];
+
+  const filteredProjects = allProjects.filter((project) => {
     const sectorMatch = selectedSector === "All" || project.sector === selectedSector;
     const countryMatch =
       selectedCountry === "All" || project.country.includes(selectedCountry);
@@ -146,7 +167,8 @@ function FilterSection({
   );
 }
 
-function ProjectsGrid({ projects }: { projects: typeof projects }) {
+// Fixed the circular 'any' reference and used correct Project[] type
+function ProjectsGrid({ projects }: { projects: Project[] }) {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

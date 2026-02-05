@@ -3,55 +3,73 @@ import type { TeamMember } from '../types';
 export const teamMembers: TeamMember[] = [
   {
     id: '1',
-    name: 'Dr. Amina Wanjiru',
-    role: 'Founder & CEO',
-    bio: 'Environmental scientist with 15+ years in climate tech. Former climate advisor to Kenya Ministry of Environment. PhD in Environmental Engineering from University of Nairobi.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
+    name: 'John Mburu',
+    role: 'Founder & Fullstack Engineer',
+    bio: 'IT Specialist with 3+ years in fintech and climate tech. Former Software Engineer at JamboPay.',
+    image: '/mburu.jpeg',
     linkedin: '#',
     twitter: '#'
   },
   {
     id: '2',
-    name: 'John Kamau',
-    role: 'CTO',
-    bio: 'Full-stack engineer specializing in data platforms and IoT. Built climate monitoring systems across East Africa. MSc Computer Science, Strathmore University.',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop',
+    name: 'Michael Gichohi',
+    role: 'Founder & Chief Strategist',
+    bio: 'Civil engineer specializing in roads and clean water sanitation. Built roads across Nakuru County.',
+    image: '/mike.jpeg',
     linkedin: '#',
     twitter: '#'
   },
   {
     id: '3',
-    name: 'Grace Otieno',
-    role: 'Head of Partnerships',
-    bio: 'Sustainability strategist with expertise in ESG reporting and green finance. Worked with UNEP and African Development Bank on climate resilience programs.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
+    name: 'Simon Maina',
+    role: 'Founder & Cyber Security Specialist',
+    bio: 'Cybersecurity personel with expertise in Ethical Hacking and Pen Testing.',
+    image: '/symoh.jpeg',
     linkedin: '#',
     twitter: '#'
   },
   {
     id: '4',
-    name: 'David Mwangi',
-    role: 'Lead Data Scientist',
-    bio: 'AI/ML specialist focused on climate prediction models. Developed early warning systems for droughts and floods in the Horn of Africa region.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
+    name: 'Shanice Mwangi',
+    role: 'Lead Marketing & Partnerships',
+    bio: 'Marketing and Relations specialist focused on creating sustainable partnerships with organizations that focus on sustainability and green solutions.',
+    image: '/shanice.jpeg',
     linkedin: '#',
     twitter: '#'
   },
   {
     id: '5',
-    name: 'Sarah Njeri',
-    role: 'Head of Product',
-    bio: 'Product designer and strategist. Previously led digital transformation projects for agricultural cooperatives and microfinance institutions across Kenya.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
+    name: 'Melaniec Mwangi',
+    role: 'Head of Finance',
+    bio: 'Finance and Accounting specialist. Previously led digital transformation projects for agricultural cooperatives and microfinance institutions across Kenya.',
+    image: '/mela.jpeg',
     linkedin: '#',
     twitter: '#'
   },
   {
     id: '6',
-    name: 'Peter Ochieng',
-    role: 'Sustainability Analyst',
-    bio: 'Environmental economist focused on carbon markets and climate finance. Certified GHG analyst with experience in renewable energy projects.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
+    name: 'Shallom Githu',
+    role: 'Data Scientist & Cloud Engineer',
+    bio: 'Data Scientist focused on climate prediction models. Developed early warning systems for drought and floods in the Horn of Africa Region.',
+    image: '/shallom.jpeg',
+    linkedin: '#',
+    twitter: '#'
+  },
+  {
+    id: '7',
+    name: 'Zack Kimani',
+    role: 'Fullstack Engineer',
+    bio: 'Specializing in data platforms & IoT. Built climate monitoring systems across East Africa Region.',
+    image: '/zac.jpeg',
+    linkedin: '#',
+    twitter: '#'
+  },
+  {
+    id: '8',
+    name: 'Peter Chege',
+    role: 'Doctor & Environmental Scientist',
+    bio: 'CSR advisor to the Ministry of Environment, Health and Sanitation. Scouts for needy causes that require attention and sensitization.',
+    image: '/IP.jpeg',
     linkedin: '#',
     twitter: '#'
   }

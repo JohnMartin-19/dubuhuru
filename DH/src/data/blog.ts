@@ -55,10 +55,10 @@ Africa doesn't need charity. It needs investment in solutions that are both prof
 
 The question isn't whether Africa can lead this revolution—it's whether the global financial system will be ready to follow.`,
     category: 'Africa',
-    author: 'Dr. Amina Wanjiru',
-    date: '2025-01-15',
+    author: 'Melaniec Mwangi',
+    date: '2026-01-15',
     readTime: '6 min',
-    image: 'https://images.unsplash.com/photo-1571677216955-c42d0546b644?w=1200&h=600&fit=crop'
+    image: 'https://media.istockphoto.com/id/1387646380/photo/shot-of-a-group-of-unrecognizable-businesspeople-holding-plants-in-dirt-at-work.webp?a=1&b=1&s=612x612&w=0&k=20&c=H3UtA5Q4YbMxosJWlmNDsOsN8yqKdglUMvSmiemmMk8='
   },
   {
     id: '2',
@@ -125,8 +125,8 @@ By democratizing access to climate data and insights, we're not just protecting 
 
 The farms of tomorrow won't be bigger. They'll be smarter.`,
     category: 'Climate',
-    author: 'Sarah Njeri',
-    date: '2025-01-10',
+    author: 'Peter Chege',
+    date: '2026-01-10',
     readTime: '5 min',
     image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=1200&h=600&fit=crop'
   },
@@ -214,8 +214,8 @@ Companies that embed ESG excellence now will be positioned to lead as Africa's e
 
 The question isn't whether to take ESG seriously. It's how quickly you can turn it from compliance burden to competitive advantage.`,
     category: 'ESG',
-    author: 'Grace Otieno',
-    date: '2025-01-05',
+    author: 'Shanice Mwangi',
+    date: '2026-01-05',
     readTime: '7 min',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=600&fit=crop'
   },
@@ -326,14 +326,14 @@ The future of African cities will be shaped not by international consultants wit
 
 That's the urban revolution worth investing in.`,
     category: 'Tech',
-    author: 'John Kamau',
-    date: '2024-12-28',
+    author: 'John Mburu',
+    date: '2025-12-28',
     readTime: '8 min',
     image: 'https://images.unsplash.com/photo-1549421263-5ec394a5ad4c?w=1200&h=600&fit=crop'
   },
   {
     id: '5',
-    title: 'Building a Transparent Donations Platform for Climate Action',
+    title: 'Building a Transparent Donations Platform for African Impact',
     slug: 'transparent-donations-climate',
     excerpt: 'How blockchain and digital verification are restoring trust in climate philanthropy and enabling direct impact funding for African communities.',
     content: `Donor fatigue is real. After decades of well-intentioned climate projects that failed to deliver promised results, philanthropists and impact investors are demanding transparency.
@@ -471,8 +471,8 @@ The infrastructure is ready. The communities are ready. The question is: Are tra
 
 The future of climate action depends on it.`,
     category: 'Donations',
-    author: 'Peter Ochieng',
-    date: '2024-12-20',
+    author: 'Zack Kimani',
+    date: '2025-12-20',
     readTime: '7 min',
     image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1200&h=600&fit=crop'
   }

@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowRight, CloudSun, FileBarChart, Leaf, Droplet, HandHeart, Sparkles, Shield, Zap, Globe } from "lucide-react";
+import { ArrowRight, CloudSun, FileBarChart, Leaf, Droplet, HandHeart, Shield, Zap, Globe } from "lucide-react";
 
 export function Home() {
   return (
@@ -142,7 +142,7 @@ function LinkaAfricaFeature() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/login"
+                to="https://linka-africa.com"
                 className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105"
               >
                 <HandHeart className="mr-2 w-5 h-5" />
@@ -372,18 +372,18 @@ function CTASection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/login"
+              to="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary rounded-lg hover:bg-white/90 transition-all hover:scale-105"
             >
-              Start a Campaign
+              Contact Us
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
-            <Link
+            {/* <Link
               to="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all"
             >
               Contact Us
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
       </div>

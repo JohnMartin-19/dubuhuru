@@ -18,6 +18,7 @@ export interface Solution {
   features: string[];
   benefits: string[];
   useCases: string[];
+  status:string;
 }
 
 export interface Project {

@@ -56,14 +56,23 @@ function SolutionsGrid() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link
-                  to={`/solutions/${solution.slug}`}
-                  className="block h-full bg-card border border-border rounded-xl p-8 hover:border-primary transition-all hover:shadow-xl group"
+                  to={solution.status === 'Coming Soon' ? '/contact' : `/solutions/${solution.slug}`}
+                  className="relative overflow-hidden block h-full bg-card border border-border rounded-xl p-8 hover:border-primary transition-all hover:shadow-xl group"
                 >
+                  {/* Amber/Yellow Status Badge */}
+                  {solution.status === 'Coming Soon' && (
+                    <div className="absolute top-6 right-6">
+                      <span className="text-xs px-3 py-1 bg-amber-100 text-amber-700 rounded-full font-medium">
+                        Coming Soon
+                      </span>
+                    </div>
+                  )}
+
                   <div className="flex items-start space-x-4 mb-6">
                     <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all">
                       <IconComponent className="w-7 h-7 text-primary group-hover:text-primary-foreground" />
                     </div>
-                    <div>
+                    <div className="pr-20"> {/* Padding added to avoid overlapping text with the badge */}
                       <h2 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
                         {solution.title}
                       </h2>
@@ -73,7 +82,7 @@ function SolutionsGrid() {
 
                   <div className="space-y-4 mb-6">
                     <div>
-                      <h3 className="font-semibold mb-2">Key Features</h3>
+                      <h3 className="font-semibold mb-2 text-foreground">Key Features</h3>
                       <ul className="space-y-1">
                         {solution.features.slice(0, 4).map((feature, i) => (
                           <li key={i} className="text-sm text-muted-foreground flex items-start">
@@ -86,7 +95,7 @@ function SolutionsGrid() {
                   </div>
 
                   <div className="flex items-center text-primary font-medium">
-                    Learn more
+                    {solution.status === 'Coming Soon' ? 'Inquire for Early Access' : 'Learn more'}
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
                   </div>
                 </Link>
