@@ -67,7 +67,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: '8',
     name: 'Peter Chege',
-    role: 'Doctor & Environmental Scientist',
+    role: 'Health & Humanitarian Officer',
     bio: 'CSR advisor to the Ministry of Environment, Health and Sanitation. Scouts for needy causes that require attention and sensitization.',
     image: '/IP.jpeg',
     linkedin: '#',

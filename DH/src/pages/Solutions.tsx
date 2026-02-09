@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { CloudSun, FileBarChart, Leaf, Droplet, ArrowRight, HandHeart } from "lucide-react";
+import { CloudSun, FileBarChart, Leaf, Droplet, ArrowRight, HandHeart, Cpu } from "lucide-react";
 import { solutions } from "../data/solutions";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -9,6 +9,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   "file-bar-chart": FileBarChart,
   leaf: Leaf,
   droplet: Droplet,
+  cpu: Cpu,
 };
 
 export function Solutions() {

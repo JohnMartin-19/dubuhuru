@@ -108,12 +108,12 @@ export const projects: Project[] = [
   },
   {
     id: '8',
-    title: 'Rwanda Tea Estate Sustainability Platform',
-    description: 'Provided ESG reporting and certification support for tea estates in Rwanda seeking Rainforest Alliance and Fair Trade certification. The platform streamlined data collection and improved compliance rates.',
+    title: 'Kericho Tea Estate Sustainability Platform',
+    description: 'Provided ESG reporting and certification support for tea estates in Kericho seeking Rainforest Alliance and Fair Trade certification. The platform streamlined data collection and improved compliance rates.',
     sector: 'Agriculture',
-    country: 'Rwanda',
+    country: 'Kenya',
     impactArea: 'ESG',
-    image: 'https://images.unsplash.com/photo-1563788835254-05b2f3d8a20c?w=800&h=500&fit=crop',
+    image: 'https://media.istockphoto.com/id/2204651136/photo/kenya-tea-leaves-farm-farming-large-scale-plantations-estate-kericho-county-landscapes.webp?a=1&b=1&s=612x612&w=0&k=20&c=N65gLfxWUUX8M9gCbBdxRa19-lii7Mc-yILDW4yo1sw=',
     stats: [
       { label: 'Estates Certified', value: '12' },
       { label: 'Farmers Trained', value: '3,500' },
