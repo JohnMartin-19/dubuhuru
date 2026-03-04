@@ -222,14 +222,14 @@ function ProjectsGrid({ projects }: { projects: Project[] }) {
                     })}
                   </div>
 
-                  <div className="grid grid-cols-3 gap-2 pt-4 border-t border-border">
+                  {/* <div className="grid grid-cols-3 gap-2 pt-4 border-t border-border">
                     {project.stats.map((stat, i) => (
                       <div key={i} className="text-center">
                         <div className="text-lg font-bold text-primary">{stat.value}</div>
                         <div className="text-xs text-muted-foreground">{stat.label}</div>
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             ))}

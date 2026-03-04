@@ -60,14 +60,14 @@ function HeroSection() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop"
+                src="https://cdn.pixabay.com/photo/2018/08/02/16/34/sunrise-3579931_1280.jpg"
                 alt="African landscape with sustainable technology"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             {/* Floating badge */}
-            <div className="absolute -bottom-6 -left-6 bg-card rounded-xl shadow-lg p-6 border border-border">
+            {/* <div className="absolute -bottom-6 -left-6 bg-card rounded-xl shadow-lg p-6 border border-border">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <HandHeart className="w-6 h-6 text-primary" />
@@ -77,7 +77,7 @@ function HeroSection() {
                   <div className="text-sm text-muted-foreground">One solution at a time</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
@@ -90,6 +90,48 @@ function LinkaAfricaFeature() {
     <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative"
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://media.istockphoto.com/id/1200802368/photo/african-little-girls-standing-in-trash-and-looking-at-kibera-slum-kenya-east-africa.webp?a=1&b=1&s=612x612&w=0&k=20&c=0w--aCphkVcgEpJMuAv2vb5aBnss-B1u4_Cg1v7qQ-M="
+                alt="African community receiving support"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Direct Impact, Maximum Transparency</h3>
+                <p className="text-white/90">
+                  Built for the African context, trusted by communities
+                </p>
+              </div>
+            </div>
+            {/* Feature badges */}
+            <div className="absolute -top-4 -right-4 bg-card rounded-xl shadow-lg px-6 py-4 border border-border">
+              <div className="flex items-center space-x-2">
+                <HandHeart className="w-5 h-5 text-primary" />
+                <div>
+                  <div className="text-sm font-semibold">AI Verified</div>
+                  <div className="text-xs text-muted-foreground">Trusted causes</div>
+                </div>
+              </div>
+            </div>
+            {/* <div className="absolute -bottom-4 -left-4 bg-card rounded-xl shadow-lg px-6 py-4 border border-border">
+              <div className="flex items-center space-x-2">
+                <Sparkles className="w-5 h-5 text-primary" />
+                <div>
+                  <div className="text-sm font-semibold">AI Verified</div>
+                  <div className="text-xs text-muted-foreground">Trusted causes</div>
+                </div>
+              </div>
+            </div> */}
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -155,48 +197,6 @@ function LinkaAfricaFeature() {
                 Get in Touch
               </Link>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative"
-          >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://media.istockphoto.com/id/1200802368/photo/african-little-girls-standing-in-trash-and-looking-at-kibera-slum-kenya-east-africa.webp?a=1&b=1&s=612x612&w=0&k=20&c=0w--aCphkVcgEpJMuAv2vb5aBnss-B1u4_Cg1v7qQ-M="
-                alt="African community receiving support"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">Direct Impact, Maximum Transparency</h3>
-                <p className="text-white/90">
-                  Built for the African context, trusted by communities
-                </p>
-              </div>
-            </div>
-            {/* Feature badges */}
-            <div className="absolute -top-4 -right-4 bg-card rounded-xl shadow-lg px-6 py-4 border border-border">
-              <div className="flex items-center space-x-2">
-                <HandHeart className="w-5 h-5 text-primary" />
-                <div>
-                  <div className="text-sm font-semibold">AI Verified</div>
-                  <div className="text-xs text-muted-foreground">Trusted causes</div>
-                </div>
-              </div>
-            </div>
-            {/* <div className="absolute -bottom-4 -left-4 bg-card rounded-xl shadow-lg px-6 py-4 border border-border">
-              <div className="flex items-center space-x-2">
-                <Sparkles className="w-5 h-5 text-primary" />
-                <div>
-                  <div className="text-sm font-semibold">AI Verified</div>
-                  <div className="text-xs text-muted-foreground">Trusted causes</div>
-                </div>
-              </div>
-            </div> */}
           </motion.div>
         </div>
       </div>

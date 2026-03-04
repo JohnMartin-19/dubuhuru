@@ -139,6 +139,15 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                <a
+                  href="mailto:dubuhurultd@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  info@dubuhuru.com
+                </a>
+              </li>
+              <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
                   href="tel:+254 0118968369"

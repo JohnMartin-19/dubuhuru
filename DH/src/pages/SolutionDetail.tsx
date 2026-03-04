@@ -26,7 +26,7 @@ export function SolutionDetail() {
     <div>
       <HeroSection solution={solution} IconComponent={IconComponent} />
       <DetailsSection solution={solution} />
-      <CTASection />
+      {/* <CTASection /> */}
     </div>
   );
 }
@@ -199,30 +199,30 @@ function DetailsSection({ solution }: { solution: typeof solutions[0] }) {
   );
 }
 
-function CTASection() {
-  return (
-    <section className="py-20 bg-muted/30">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Implement This Solution?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Our team is ready to help you deploy and customize this solution for your needs.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105"
-          >
-            Get Started Today
-          </Link>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
+// function CTASection() {
+//   return (
+//     <section className="py-20 bg-muted/30">
+//       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+//         <motion.div
+//           initial={{ opacity: 0, y: 20 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           viewport={{ once: true }}
+//           transition={{ duration: 0.6 }}
+//         >
+//           <h2 className="text-3xl md:text-4xl font-bold mb-4">
+//             Ready to Implement This Solution?
+//           </h2>
+//           <p className="text-lg text-muted-foreground mb-8">
+//             Our team is ready to help you deploy and customize this solution for your needs.
+//           </p>
+//           <Link
+//             to="/contact"
+//             className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105"
+//           >
+//             Get Started Today
+//           </Link>
+//         </motion.div>
+//       </div>
+//     </section>
+//   );
+// }

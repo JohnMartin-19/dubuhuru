@@ -46,7 +46,7 @@ export function Navigation() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-1 z-50 rounded-full transition-all duration-300 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-sm shadow-md"
           : "bg-background"
@@ -56,7 +56,8 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src='/dubu.jpeg' alt="Dubu Huru" className="h-12 w-auto" />
+          <h1 className="text-primary">Dubu Huru</h1>
+            {/* <img src='/dubu.jpeg' alt="Dubu Huru" className="h-12 w-auto" /> */}
           </Link>
 
           {/* Desktop Navigation */}
