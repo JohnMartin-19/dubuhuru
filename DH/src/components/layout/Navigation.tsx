@@ -11,7 +11,8 @@ export function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      // Check if scrolled past the viewport height (landing page)
+      setIsScrolled(window.scrollY > window.innerHeight - 100);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -48,8 +49,8 @@ export function Navigation() {
     <nav
       className={`sticky top-1 z-50 rounded-full transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-sm shadow-md"
-          : "bg-background"
+          ? "bg-background/70 backdrop-blur-md shadow-md"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

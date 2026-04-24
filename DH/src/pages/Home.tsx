@@ -15,71 +15,63 @@ export function Home() {
 }
 
 function HeroSection() {
+  const scrollToContent = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5 pattern-bg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="relative overflow-hidden h-screen -mt-20">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="https://cdn.pixabay.com/video/2025/11/28/318540_large.mp4" type="video/mp4" />
+      </video>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      {/* Content */}
+      <div className="relative z-10 h-full flex items-center">
+        <div className="w-full pl-8 sm:pl-12 lg:pl-16 pr-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="max-w-3xl"
           >
-            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
-              <span className="text-primary font-medium">Technology for Sustainability</span>
+            <div className="inline-block px-4 py-2 bg-primary/10 backdrop-blur-sm rounded-full mb-6">
+              <span className="text-white font-medium">Technology for Sustainability</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
               Building Africa's
               <span className="text-primary"> Sustainable Tech </span>
+              <br />
                for the Future
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Digital solutions that impact society, enable environmental sustainability, climate resilience, and responsible resource management across the continent. From Gilgil to the world.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105"
-              >
-                Request Demo
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link
-                to="/about"
-                className="inline-flex items-center justify-center px-8 py-4 bg-card border-2 border-primary text-primary rounded-lg hover:bg-primary/5 transition-all"
-              >
-                Learn More
-              </Link>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://cdn.pixabay.com/photo/2018/08/02/16/34/sunrise-3579931_1280.jpg"
-                alt="African landscape with sustainable technology"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            </div>
-            {/* Floating badge */}
-            {/* <div className="absolute -bottom-6 -left-6 bg-card rounded-xl shadow-lg p-6 border border-border">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <HandHeart className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <div className="text-xl font-bold text-primary">Making Impact</div>
-                  <div className="text-sm text-muted-foreground">One solution at a time</div>
-                </div>
-              </div>
-            </div> */}
           </motion.div>
         </div>
+      </div>
+
+      {/* Scroll More Button */}
+      <div className="absolute bottom-8 left-8 sm:left-12 lg:left-16 z-10">
+        <motion.button
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          onClick={scrollToContent}
+          className="inline-flex items-center justify-center px-8 py-4  text-white transition-all"
+        >
+          Scroll More
+          <ArrowRight className="ml-2 w-5 h-5 rotate-90" />
+        </motion.button>
       </div>
     </section>
   );
